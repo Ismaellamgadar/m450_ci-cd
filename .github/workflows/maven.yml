@@ -8,6 +8,7 @@ on:
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
 
     steps:
@@ -21,3 +22,5 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file calculator/pom.xml
 
+    - name: Run tests
+      run: mvn test --file calculator/pom.xml
