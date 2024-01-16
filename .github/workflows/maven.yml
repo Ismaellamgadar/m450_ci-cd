@@ -23,4 +23,4 @@ jobs:
       run: mvn -B package --file calculator/pom.xml
 
     - name: Run tests
-      run: mvn test --file calculator/pom.xml
+      run: mvn verify --file calculator/pom.xml
